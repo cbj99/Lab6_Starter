@@ -1,0 +1,530 @@
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Organization",
+            "@id": "https://www.thecountrycook.net/#organization",
+            "name": "The Country Cook",
+            "url": "https://www.thecountrycook.net/",
+            "sameAs": [
+                "https://www.facebook.com/thecountrycook/",
+                "https://www.instagram.com/thecountrycook/",
+                "https://www.youtube.com/channel/UCBbVVTSQkXMwrCKtStfDhgA",
+                "https://www.pinterest.com/thecountrycook/",
+                "https://twitter.com/Country_Cook"
+            ],
+            "logo": {
+                "@type": "ImageObject",
+                "@id": "https://www.thecountrycook.net/#logo",
+                "inLanguage": "en-US",
+                "url": "https://www.thecountrycook.net/wp-content/uploads/2018/05/TCC-LOGO.jpg",
+                "contentUrl": "https://www.thecountrycook.net/wp-content/uploads/2018/05/TCC-LOGO.jpg",
+                "width": 2000,
+                "height": 2000,
+                "caption": "The Country Cook"
+            },
+            "image": {
+                "@id": "https://www.thecountrycook.net/#logo"
+            }
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://www.thecountrycook.net/#website",
+            "url": "https://www.thecountrycook.net/",
+            "name": "The Country Cook",
+            "description": "Recipes for the busy cook!",
+            "publisher": {
+                "@id": "https://www.thecountrycook.net/#organization"
+            },
+            "potentialAction": [
+                {
+                    "@type": "SearchAction",
+                    "target": {
+                        "@type": "EntryPoint",
+                        "urlTemplate": "https://www.thecountrycook.net/?s={search_term_string}"
+                    },
+                    "query-input": "required name=search_term_string"
+                }
+            ],
+            "inLanguage": "en-US"
+        },
+        {
+            "@type": "ImageObject",
+            "@id": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#primaryimage",
+            "inLanguage": "en-US",
+            "url": "https://www.thecountrycook.net/wp-content/uploads/2021/02/thumbnail-Southern-Fried-Chicken-scaled.jpg",
+            "contentUrl": "https://www.thecountrycook.net/wp-content/uploads/2021/02/thumbnail-Southern-Fried-Chicken-scaled.jpg",
+            "width": 1200,
+            "height": 1200,
+            "caption": "Close up of The Best Southern Fried Chicken on metal tray thumbnail image"
+        },
+        {
+            "@type": [
+                "WebPage",
+                "FAQPage"
+            ],
+            "@id": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#webpage",
+            "url": "https://www.thecountrycook.net/the-best-southern-fried-chicken/",
+            "name": "The Best Southern Fried Chicken (+Video) - The Country Cook",
+            "isPartOf": {
+                "@id": "https://www.thecountrycook.net/#website"
+            },
+            "primaryImageOfPage": {
+                "@id": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#primaryimage"
+            },
+            "datePublished": "2021-02-17T15:00:35+00:00",
+            "dateModified": "2021-10-20T18:05:11+00:00",
+            "description": "If you want a crazy delicious chicken recipe, then it has to be this recipe for The Best Southern Fried Chicken. Crispy, flavorful and absolutely\u00a0divine!",
+            "breadcrumb": {
+                "@id": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#breadcrumb"
+            },
+            "mainEntity": [
+                {
+                    "@id": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#faq-question-1630506049761"
+                },
+                {
+                    "@id": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#faq-question-1630506126562"
+                },
+                {
+                    "@id": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#faq-question-1630506156199"
+                },
+                {
+                    "@id": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#faq-question-1630506222280"
+                },
+                {
+                    "@id": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#faq-question-1630506326239"
+                },
+                {
+                    "@id": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#faq-question-1630505426833"
+                },
+                {
+                    "@id": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#faq-question-1630506391586"
+                }
+            ],
+            "inLanguage": "en-US",
+            "potentialAction": [
+                {
+                    "@type": "ReadAction",
+                    "target": [
+                        "https://www.thecountrycook.net/the-best-southern-fried-chicken/"
+                    ]
+                }
+            ]
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#breadcrumb",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://www.thecountrycook.net/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "DINNER RECIPES",
+                    "item": "https://www.thecountrycook.net/category/main-dishes/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "The Best Southern Fried Chicken (+Video)"
+                }
+            ]
+        },
+        {
+            "@type": "Article",
+            "@id": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#article",
+            "isPartOf": {
+                "@id": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#webpage"
+            },
+            "author": {
+                "@id": "https://www.thecountrycook.net/#/schema/person/c379e8cff24ff22c66051e3890bfda12"
+            },
+            "headline": "The Best Southern Fried Chicken (+Video)",
+            "datePublished": "2021-02-17T15:00:35+00:00",
+            "dateModified": "2021-10-20T18:05:11+00:00",
+            "wordCount": 1554,
+            "commentCount": 24,
+            "publisher": {
+                "@id": "https://www.thecountrycook.net/#organization"
+            },
+            "image": {
+                "@id": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#primaryimage"
+            },
+            "thumbnailUrl": "https://www.thecountrycook.net/wp-content/uploads/2021/02/thumbnail-Southern-Fried-Chicken-scaled.jpg",
+            "articleSection": [
+                "CHICKEN/TURKEY RECIPES",
+                "DINNER RECIPES",
+                "SEASONAL/HOLIDAY RECIPES"
+            ],
+            "inLanguage": "en-US",
+            "potentialAction": [
+                {
+                    "@type": "CommentAction",
+                    "name": "Comment",
+                    "target": [
+                        "https://www.thecountrycook.net/the-best-southern-fried-chicken/#respond"
+                    ]
+                }
+            ],
+            "video": [
+                {
+                    "@id": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#video"
+                }
+            ]
+        },
+        {
+            "@type": "Person",
+            "@id": "https://www.thecountrycook.net/#/schema/person/c379e8cff24ff22c66051e3890bfda12",
+            "name": "Brandie @ The Country Cook",
+            "image": {
+                "@type": "ImageObject",
+                "@id": "https://www.thecountrycook.net/#personlogo",
+                "inLanguage": "en-US",
+                "url": "https://secure.gravatar.com/avatar/1bcc835ad414c2a37b58b257ec3359f2?s=96&d=blank&r=g",
+                "contentUrl": "https://secure.gravatar.com/avatar/1bcc835ad414c2a37b58b257ec3359f2?s=96&d=blank&r=g",
+                "caption": "Brandie @ The Country Cook"
+            },
+            "description": "I\u2019m a regular home cook, like most of you, doing my best to get a good meal on the table for my family. I like to say the recipes on here are recipes for the busy cook (you know who you are). You can still get a good meal on the table, with a few shortcuts to help you along the way. I hope you\u2019ll find lots of recipes here that you\u2019ll love and hopefully will become family favorites. Read more...",
+            "sameAs": [
+                "https://www.thecountrycook.net",
+                "https://twitter.com/Country_Cook"
+            ]
+        },
+        {
+            "@type": "Question",
+            "@id": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#faq-question-1630506049761",
+            "position": 1,
+            "url": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#faq-question-1630506049761",
+            "name": "Can I substitute the buttermilk?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. This is non-negotiable here. If you're are going to go through the trouble of making fried chicken, you will be missing out on so much flavor. It has to be real buttermilk too. Not the stuff that you make with milk and vinegar. And overnight soak is optimal for maximum juiciness.",
+                "inLanguage": "en-US"
+            },
+            "inLanguage": "en-US"
+        },
+        {
+            "@type": "Question",
+            "@id": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#faq-question-1630506126562",
+            "position": 2,
+            "url": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#faq-question-1630506126562",
+            "name": "Why add cornstarch?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The mixture of the cornstarch and flour helps give it that extra crunchy exterior. ",
+                "inLanguage": "en-US"
+            },
+            "inLanguage": "en-US"
+        },
+        {
+            "@type": "Question",
+            "@id": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#faq-question-1630506156199",
+            "position": 3,
+            "url": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#faq-question-1630506156199",
+            "name": "Can I use chicken breasts?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This recipe works with any cut of chicken. The key is just making sure the chicken is cooked to 165F degrees internal temperature. ",
+                "inLanguage": "en-US"
+            },
+            "inLanguage": "en-US"
+        },
+        {
+            "@type": "Question",
+            "@id": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#faq-question-1630506222280",
+            "position": 4,
+            "url": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#faq-question-1630506222280",
+            "name": "Does it have to be peanut oil?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Peanut oil has a neutral flavor that won't compromise the flavor of the chicken. Canola oil would be my second choice.",
+                "inLanguage": "en-US"
+            },
+            "inLanguage": "en-US"
+        },
+        {
+            "@type": "Question",
+            "@id": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#faq-question-1630506326239",
+            "position": 5,
+            "url": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#faq-question-1630506326239",
+            "name": "I always see southern cooks use a cast iron skillet for frying. How come you don't?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "I deep fry my chicken in a deep fryer but you can also do this in a deep, heavy bottomed pot. I just find that you often get darker burn-like spots with a cast iron pan if you aren't super careful.",
+                "inLanguage": "en-US"
+            },
+            "inLanguage": "en-US"
+        },
+        {
+            "@type": "Question",
+            "@id": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#faq-question-1630505426833",
+            "position": 6,
+            "url": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#faq-question-1630505426833",
+            "name": "How do I make this taste more like KFC chicken?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Well, you'll need to use their famous 11 herbs and spices. Just substitute the garlic powder, onion powder, salt and pepper in this recipe for the following seasonings: (you will skip the step of seasoning the individual chicken and pieces and stir these seasonings in with the flour/cornstarch mixture)<br/><br/>2 teaspoons\u00a0salt<br/>\u00bd tablespoon\u00a0dried thyme<br/>\u00bd tablespoon\u00a0dried basil<br/>1 teaspoon\u00a0dried oregano<br/>1 teaspoon\u00a0celery salt<br/>\u00bd tablespoon\u00a0black pepper<br/>1 tablespoon\u00a0mustard powder<br/>2 tablespoons\u00a0paprika<br/>2 tablespoons\u00a0garlic salt<br/>1 tablespoon\u00a0powdered ginger<br/>1 tablespoon\u00a0pepper (use white pepper if you have it)<br/>",
+                "inLanguage": "en-US"
+            },
+            "inLanguage": "en-US"
+        },
+        {
+            "@type": "Question",
+            "@id": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#faq-question-1630506391586",
+            "position": 7,
+            "url": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#faq-question-1630506391586",
+            "name": "What should I serve with this chicken?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The possibilities are endless. Some of our favorites are:<a href=\"https://www.thecountrycook.net/best-ever-potato-salad/\"> POTATO SALAD</a>, <a href=\"https://www.thecountrycook.net/southern-coleslaw/\">COLE SLAW</a>, <a href=\"https://www.thecountrycook.net/butter-dip-biscuits/\">BUTTER DIP BISCUITS</a> and <a href=\"https://www.thecountrycook.net/no-boil-homemade-macaroni-and-cheese/\">MACARONI &amp; CHEESE</a>. ",
+                "inLanguage": "en-US"
+            },
+            "inLanguage": "en-US"
+        },
+        {
+            "@context": "http://schema.org/",
+            "@type": "Recipe",
+            "name": "THE BEST SOUTHERN FRIED CHICKEN",
+            "author": {
+                "@type": "Person",
+                "name": "Brandie @ The Country Cook"
+            },
+            "description": "If you want a crazy delicious chicken recipe, then it has to be this recipe for The Best Southern Fried Chicken. Crispy, flavorful and absolutely\u00a0divine!",
+            "datePublished": "2021-02-17T10:00:35+00:00",
+            "image": [
+                "https://www.thecountrycook.net/wp-content/uploads/2021/02/thumbnail-Southern-Fried-Chicken-scaled.jpg",
+                "https://www.thecountrycook.net/wp-content/uploads/2021/02/thumbnail-Southern-Fried-Chicken-500x500.jpg",
+                "https://www.thecountrycook.net/wp-content/uploads/2021/02/thumbnail-Southern-Fried-Chicken-500x375.jpg",
+                "https://www.thecountrycook.net/wp-content/uploads/2021/02/thumbnail-Southern-Fried-Chicken-480x270.jpg"
+            ],
+            "video": {
+                "name": "How to make: Best Southern Fried Chicken",
+                "description": "Fried chicken doesn't need to be intimidating! Let me show you an easy and foolproof way to make delicious and juicy fried chicken every time!\nFULL RECIPE HERE: https://www.thecountrycook.net/the-best-southern-fried-chicken/",
+                "uploadDate": "2021-08-26T15:12:19+00:00",
+                "duration": "PT2M1S",
+                "thumbnailUrl": "https://i.ytimg.com/vi/nVUlxsbPPoM/hqdefault.jpg",
+                "contentUrl": "https://www.youtube.com/watch?v=nVUlxsbPPoM",
+                "embedUrl": "https://www.youtube.com/embed/nVUlxsbPPoM?feature=oembed",
+                "@type": "VideoObject",
+                "hasPart": [
+                    {
+                        "@type": "Clip",
+                        "@id": "Clip1",
+                        "name": "Step 1",
+                        "startOffset": "1",
+                        "endOffset": "26",
+                        "url": "https://www.youtube.com/watch?v=nVUlxsbPPoM&t=1"
+                    },
+                    {
+                        "@type": "Clip",
+                        "@id": "Clip2",
+                        "name": "Step 2",
+                        "startOffset": "27",
+                        "endOffset": "52",
+                        "url": "https://www.youtube.com/watch?v=nVUlxsbPPoM&t=27"
+                    },
+                    {
+                        "@type": "Clip",
+                        "@id": "Clip3",
+                        "name": "Step 3",
+                        "startOffset": "53",
+                        "endOffset": "61",
+                        "url": "https://www.youtube.com/watch?v=nVUlxsbPPoM&t=53"
+                    },
+                    {
+                        "@type": "Clip",
+                        "@id": "Clip4",
+                        "name": "Step 4",
+                        "startOffset": "62",
+                        "endOffset": "69",
+                        "url": "https://www.youtube.com/watch?v=nVUlxsbPPoM&t=62"
+                    },
+                    {
+                        "@type": "Clip",
+                        "@id": "Clip5",
+                        "name": "Step 5",
+                        "startOffset": "70",
+                        "endOffset": "86",
+                        "url": "https://www.youtube.com/watch?v=nVUlxsbPPoM&t=70"
+                    },
+                    {
+                        "@type": "Clip",
+                        "@id": "Clip6",
+                        "name": "Step 6",
+                        "startOffset": "87",
+                        "endOffset": "91",
+                        "url": "https://www.youtube.com/watch?v=nVUlxsbPPoM&t=87"
+                    },
+                    {
+                        "@type": "Clip",
+                        "@id": "Clip7",
+                        "name": "Step 7",
+                        "startOffset": "92",
+                        "endOffset": "98",
+                        "url": "https://www.youtube.com/watch?v=nVUlxsbPPoM&t=92"
+                    },
+                    {
+                        "@type": "Clip",
+                        "@id": "Clip8",
+                        "name": "Final Step",
+                        "startOffset": "99",
+                        "endOffset": "120",
+                        "url": "https://www.youtube.com/watch?v=nVUlxsbPPoM&t=99"
+                    }
+                ]
+            },
+            "recipeYield": [
+                "4"
+            ],
+            "prepTime": "PT10M",
+            "cookTime": "PT14M",
+            "totalTime": "PT504M",
+            "recipeIngredient": [
+                "1 whole chicken, cut up ((or 8 pieces of your favorite cuts of chicken))",
+                "4 teaspoons kosher salt, divided use",
+                "2 teaspoons garlic powder",
+                "2 teaspoons onion powder",
+                "2 teaspoons paprika (optional)",
+                "2 cups buttermilk",
+                "2 tablespoons hot sauce",
+                "2 cup all-purpose flour",
+                "1 cup cornstarch",
+                "2 teaspoons black pepper",
+                "peanut oil for frying"
+            ],
+            "recipeInstructions": [
+                {
+                    "@type": "HowToStep",
+                    "text": "Place the chicken in a large bowl. Sprinkle on top of the chicken: 2 tsp salt, garlic powder, and onion powder then toss to coat the chicken in the spices.",
+                    "name": "Place the chicken in a large bowl. Sprinkle on top of the chicken: 2 tsp salt, garlic powder, and onion powder then toss to coat the chicken in the spices.",
+                    "url": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#wprm-recipe-67967-step-0-0",
+                    "video": {
+                        "@id": "Clip1"
+                    }
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Add the buttermilk and hot sauce to bowl, stir until everything is combined. Cover with plastic wrap and let marinate in the fridge for at least 2 hours, but it\u2019s best if you can let it sit overnight.",
+                    "name": "Add the buttermilk and hot sauce to bowl, stir until everything is combined. Cover with plastic wrap and let marinate in the fridge for at least 2 hours, but it\u2019s best if you can let it sit overnight.",
+                    "url": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#wprm-recipe-67967-step-0-1",
+                    "video": {
+                        "@id": "Clip2"
+                    }
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "In a medium-sized bowl, whisk together the flour, cornstarch, 2 tsp salt, paprika and black pepper. Set aside.",
+                    "name": "In a medium-sized bowl, whisk together the flour, cornstarch, 2 tsp salt, paprika and black pepper. Set aside.",
+                    "url": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#wprm-recipe-67967-step-0-2",
+                    "video": {
+                        "@id": "Clip3"
+                    }
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Fill up a deep fryer (deep cast iron skillet or dutch oven) with peanut oil (or neutral frying oil of your choice) and preheat to 350\u00b0F.",
+                    "name": "Fill up a deep fryer (deep cast iron skillet or dutch oven) with peanut oil (or neutral frying oil of your choice) and preheat to 350\u00b0F.",
+                    "url": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#wprm-recipe-67967-step-0-3",
+                    "video": {
+                        "@id": "Clip4"
+                    }
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Taking the chicken pieces one at a time, let the excess buttermilk drip off. Coat in the flour mixture, make sure the chicken is well coated. Shake off any excess. Set the chicken aside and let it sit for a few minutes until the coating starts to look a little pasty.",
+                    "name": "Taking the chicken pieces one at a time, let the excess buttermilk drip off. Coat in the flour mixture, make sure the chicken is well coated. Shake off any excess. Set the chicken aside and let it sit for a few minutes until the coating starts to look a little pasty.",
+                    "url": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#wprm-recipe-67967-step-0-4",
+                    "video": {
+                        "@id": "Clip5"
+                    }
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Carefully add the piece of chicken to the deep fryer and continue with the next piece. Don&#39;t add more than three or four pieces at at time. You will need to fry in batches so you do not overcrowd the fryer.  Fry until golden brown, turning every few minutes.",
+                    "name": "Carefully add the piece of chicken to the deep fryer and continue with the next piece. Don&#39;t add more than three or four pieces at at time. You will need to fry in batches so you do not overcrowd the fryer.  Fry until golden brown, turning every few minutes.",
+                    "url": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#wprm-recipe-67967-step-0-5",
+                    "video": {
+                        "@id": "Clip6"
+                    }
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Chicken is done when golden brown and the internal temperature reaches 165\u00b0F. Depending on the size of the chicken, dark meat can take about 12-14 minutes and white meat takes 8-10 minutes (these are estimates - use a meat thermometer for accurate doneness)",
+                    "name": "Chicken is done when golden brown and the internal temperature reaches 165\u00b0F. Depending on the size of the chicken, dark meat can take about 12-14 minutes and white meat takes 8-10 minutes (these are estimates - use a meat thermometer for accurate doneness)",
+                    "url": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#wprm-recipe-67967-step-0-6",
+                    "video": {
+                        "@id": "Clip7"
+                    }
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "When the chicken is done frying, place it on a paper towel lined sheet tray and immediately sprinkle a little flaked salt on top. Continue with the rest of the chicken pieces.",
+                    "name": "When the chicken is done frying, place it on a paper towel lined sheet tray and immediately sprinkle a little flaked salt on top. Continue with the rest of the chicken pieces.",
+                    "url": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#wprm-recipe-67967-step-0-7",
+                    "video": {
+                        "@id": "Clip8"
+                    }
+                }
+            ],
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5",
+                "ratingCount": "8"
+            },
+            "recipeCategory": [
+                "Main Course"
+            ],
+            "recipeCuisine": [
+                "American"
+            ],
+            "keywords": "Fried Chicken, Southern Fried Chicken, Southern Fried Chicken Recipe, The Best Southern Fried Chicken",
+            "nutrition": {
+                "@type": "NutritionInformation",
+                "calories": "727 kcal",
+                "carbohydrateContent": "61 g",
+                "proteinContent": "43 g",
+                "fatContent": "33 g",
+                "saturatedFatContent": "11 g",
+                "transFatContent": "1 g",
+                "cholesterolContent": "156 mg",
+                "sodiumContent": "1598 mg",
+                "fiberContent": "2 g",
+                "sugarContent": "6 g",
+                "servingSize": "1 serving"
+            },
+            "@id": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#recipe",
+            "isPartOf": {
+                "@id": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#article"
+            },
+            "mainEntityOfPage": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#webpage"
+        },
+        {
+            "@type": "VideoObject",
+            "@id": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#video",
+            "name": "The Best Southern Fried Chicken (+Video) - The Country Cook",
+            "isPartOf": {
+                "@id": "https://www.thecountrycook.net/the-best-southern-fried-chicken/#article"
+            },
+            "thumbnailUrl": "https://www.thecountrycook.net/wp-content/uploads/2021/02/nvulxsbppom.jpg",
+            "description": "If you want a crazy delicious chicken recipe, then it has to be this recipe for The Best Southern Fried Chicken. Crispy, flavorful and absolutely\u00a0divine!",
+            "uploadDate": "2021-02-17",
+            "width": 480,
+            "height": 270,
+            "embedUrl": "https://www.youtube.com/embed/nVUlxsbPPoM",
+            "duration": "PT2M1S",
+            "isFamilyFriendly": "true",
+            "inLanguage": "en-US"
+        }
+    ]
+}

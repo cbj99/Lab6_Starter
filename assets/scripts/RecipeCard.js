@@ -104,7 +104,7 @@ class RecipeCard extends HTMLElement {
     let main = document.querySelector('main');
     this.shadowRoot.appendChild(styleElem);
     //card.appendChild(data);
-    console.log(data);
+    //console.log(data);
 
     //add image
     let tempImg = document.createElement('img')

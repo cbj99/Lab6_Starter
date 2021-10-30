@@ -5,7 +5,10 @@
 const recipes = [
   'https://introweb.tech/assets/json/ghostCookies.json',
   'https://introweb.tech/assets/json/birthdayCake.json',
-  'https://introweb.tech/assets/json/chocolateChip.json'
+  'https://introweb.tech/assets/json/chocolateChip.json',
+  'assets/recipes/eggFriedRice.json',
+  'assets/recipes/friedChicken.json',
+  'assets/recipes/padThai.json'
 ];
 
 // Once all of the recipes that were specified above have been fetched, their
@@ -45,23 +48,23 @@ async function fetchRecipes() {
     // Part 1 Expose - TODO
 
     let temp = [];
-
+    //console.log(recipes.length);
     for (let i = 0; i < recipes.length; i++) {
       fetch(recipes[i])
-      .then(response => response.json())
-      .then(data => {
-        temp.push(data);
-        if(recipes.length == temp.length){
-        //console.log(temp);
-        recipeData.dataList = temp;
-        //console.log(recipeData);
-        resolve(true);
-        }
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-        reject(false);
-      });
+        .then(response => response.json())
+        .then(data => {
+          temp.push(data);
+          if (recipes.length == temp.length) {
+            //console.log(temp);
+            recipeData.dataList = temp;
+            //console.log(recipeData);
+            resolve(true);
+          }
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+          reject(false);
+        });
     }
 
   });
@@ -81,6 +84,10 @@ function createRecipeCards() {
   for (let i = 0; i < recipeData.dataList.length; i++) {
     let newRecipe = document.createElement("recipe-card");
     newRecipe.data = recipeData.dataList[i];
+    if(i>=3){
+      newRecipe.className = "hidden";
+      newRecipe.style.display = 'none';
+    }
     //console.log(newRecipe.data);
     //console.log(recipeData.dataList[i]);
     main.appendChild(newRecipe);
@@ -97,4 +104,27 @@ function bindShowMore() {
   // in the recipeData object where you stored them/
 
   // Part 2 Explore - TODO
+  
+  let myButton = document.querySelector('button');
+  let newRecipeList = document.getElementsByClassName('hidden');
+  //console.log(newRecipeList[0]);
+  //console.log(myButton);
+  myButton.addEventListener('click', showMore)
+
+  function showMore() {
+    if(myButton.textContent == 'Show more'){
+      myButton.textContent = 'Show less';
+      for (let j = 0; j < newRecipeList.length; j++) {
+        newRecipeList[j].style.display = 'inline';
+      }
+    }else{
+      myButton.textContent = 'Show more';
+      for (let j = 0; j < newRecipeList.length; j++) {
+        newRecipeList[j].style.display = 'none';
+      }
+    }
+
+  }
+
+
 }

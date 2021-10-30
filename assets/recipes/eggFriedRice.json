@@ -1,0 +1,281 @@
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Organization",
+            "@id": "https://www.recipetineats.com/#organization",
+            "name": "RecipeTin Eats",
+            "url": "https://www.recipetineats.com/",
+            "sameAs": [
+                "https://www.facebook.com/RecipeTinEats",
+                "http://instagram.com/recipe_tin",
+                "https://www.linkedin.com/in/nagi-maehashi-9779648b",
+                "https://www.youtube.com/c/recipetineats",
+                "http://www.pinterest.com/recipetin/"
+            ],
+            "logo": {
+                "@type": "ImageObject",
+                "@id": "https://www.recipetineats.com/#logo",
+                "inLanguage": "en-US",
+                "url": "https://www.recipetineats.com/wp-content/uploads/2019/04/RecipeTinEats_logo_for_Knowledge_Graph_card.png",
+                "contentUrl": "https://www.recipetineats.com/wp-content/uploads/2019/04/RecipeTinEats_logo_for_Knowledge_Graph_card.png",
+                "width": 2591,
+                "height": 347,
+                "caption": "RecipeTin Eats"
+            },
+            "image": {
+                "@id": "https://www.recipetineats.com/#logo"
+            }
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://www.recipetineats.com/#website",
+            "url": "https://www.recipetineats.com/",
+            "name": "RecipeTin Eats",
+            "description": "Fast Prep, Big Flavours",
+            "publisher": {
+                "@id": "https://www.recipetineats.com/#organization"
+            },
+            "potentialAction": [
+                {
+                    "@type": "SearchAction",
+                    "target": {
+                        "@type": "EntryPoint",
+                        "urlTemplate": "https://www.recipetineats.com/?s={search_term_string}"
+                    },
+                    "query-input": "required name=search_term_string"
+                }
+            ],
+            "inLanguage": "en-US"
+        },
+        {
+            "@type": "ImageObject",
+            "@id": "https://www.recipetineats.com/egg-fried-rice/#primaryimage",
+            "inLanguage": "en-US",
+            "url": "https://www.recipetineats.com/wp-content/uploads/2018/03/Egg-Fried-Rice_5-1.jpg",
+            "contentUrl": "https://www.recipetineats.com/wp-content/uploads/2018/03/Egg-Fried-Rice_5-1.jpg",
+            "width": 900,
+            "height": 1260,
+            "caption": "Close up of Egg Fried Rice in a wok with a wooden spoon, fresh off the stove"
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://www.recipetineats.com/egg-fried-rice/#webpage",
+            "url": "https://www.recipetineats.com/egg-fried-rice/",
+            "name": "Fried Rice | RecipeTin Eats",
+            "isPartOf": {
+                "@id": "https://www.recipetineats.com/#website"
+            },
+            "primaryImageOfPage": {
+                "@id": "https://www.recipetineats.com/egg-fried-rice/#primaryimage"
+            },
+            "datePublished": "2019-03-14T06:42:45+00:00",
+            "dateModified": "2021-08-01T20:29:53+00:00",
+            "description": "This is THE Fried Rice recipe that will make you wonder why you ever paid for takeout! The secret is the Chinese restaurant fried rice sauce. Quick, easy!",
+            "breadcrumb": {
+                "@id": "https://www.recipetineats.com/egg-fried-rice/#breadcrumb"
+            },
+            "inLanguage": "en-US",
+            "potentialAction": [
+                {
+                    "@type": "ReadAction",
+                    "target": [
+                        "https://www.recipetineats.com/egg-fried-rice/"
+                    ]
+                }
+            ]
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.recipetineats.com/egg-fried-rice/#breadcrumb",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://www.recipetineats.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Collections",
+                    "item": "https://www.recipetineats.com/category/collections/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Asian Takeout",
+                    "item": "https://www.recipetineats.com/category/collections/asian-takeout/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "name": "Fried Rice"
+                }
+            ]
+        },
+        {
+            "@type": "Article",
+            "@id": "https://www.recipetineats.com/egg-fried-rice/#article",
+            "isPartOf": {
+                "@id": "https://www.recipetineats.com/egg-fried-rice/#webpage"
+            },
+            "author": {
+                "@id": "https://www.recipetineats.com/#/schema/person/1d495a057e0419b552333c8526d827a9"
+            },
+            "headline": "Fried Rice",
+            "datePublished": "2019-03-14T06:42:45+00:00",
+            "dateModified": "2021-08-01T20:29:53+00:00",
+            "wordCount": 1750,
+            "commentCount": 423,
+            "publisher": {
+                "@id": "https://www.recipetineats.com/#organization"
+            },
+            "image": {
+                "@id": "https://www.recipetineats.com/egg-fried-rice/#primaryimage"
+            },
+            "thumbnailUrl": "https://www.recipetineats.com/wp-content/uploads/2018/03/Egg-Fried-Rice_5-1.jpg",
+            "articleSection": [
+                "15 Minute Meals",
+                "Asian Recipes",
+                "Asian Takeout",
+                "Chinese recipes",
+                "Egg Recipes",
+                "Gluten Free Recipes",
+                "Quick and Easy",
+                "Quick Dinner Recipes",
+                "Rice Recipes",
+                "Rice Side Dishes",
+                "Side Dishes",
+                "Yum Cha / Dim Sum Recipes"
+            ],
+            "inLanguage": "en-US",
+            "potentialAction": [
+                {
+                    "@type": "CommentAction",
+                    "name": "Comment",
+                    "target": [
+                        "https://www.recipetineats.com/egg-fried-rice/#respond"
+                    ]
+                }
+            ]
+        },
+        {
+            "@type": "Person",
+            "@id": "https://www.recipetineats.com/#/schema/person/1d495a057e0419b552333c8526d827a9",
+            "name": "Nagi",
+            "image": {
+                "@type": "ImageObject",
+                "@id": "https://www.recipetineats.com/#personlogo",
+                "inLanguage": "en-US",
+                "url": "https://secure.gravatar.com/avatar/400004f5258d5b43d30deed3aa6e9566?s=96&d=https%3A%2F%2Fwww.recipetineats.com%2Fwp-content%2Fthemes%2Fonce-coupled-recipe-tin-eats%2Fassets%2Fimages%2Favatar-guest-temp-cache-bust-duplicate.png&r=g",
+                "contentUrl": "https://secure.gravatar.com/avatar/400004f5258d5b43d30deed3aa6e9566?s=96&d=https%3A%2F%2Fwww.recipetineats.com%2Fwp-content%2Fthemes%2Fonce-coupled-recipe-tin-eats%2Fassets%2Fimages%2Favatar-guest-temp-cache-bust-duplicate.png&r=g",
+                "caption": "Nagi"
+            },
+            "description": "I believe you can make great food with everyday ingredients even if you\u2019re short on time and cost conscious. You just need to cook clever and get creative!",
+            "sameAs": [
+                "http:////www.recipetineats.com/about-me/"
+            ]
+        },
+        {
+            "@context": "http://schema.org/",
+            "@type": "Recipe",
+            "name": "Fried Rice",
+            "author": {
+                "@type": "Person",
+                "name": "Nagi"
+            },
+            "description": "Recipe video above.\u00a0Fried rice is a side that goes with all Chinese and Asian foods! This one truly stacks up to your favourite Chinese restaurant.\u00a0See notes for scaling recipe up and using skillet instead of wok, and for GF option.Don&#39;t have day old rice? No worries. Make this reader-favourite\u00a0Emergency Baked Fried Rice\u00a0instead!",
+            "datePublished": "2019-03-14T17:42:45+00:00",
+            "image": [
+                "https://www.recipetineats.com/wp-content/uploads/2018/03/Egg-Fried-Rice_5-1.jpg",
+                "https://www.recipetineats.com/wp-content/uploads/2018/03/Egg-Fried-Rice_5-1.jpg?w=500&h=500&crop=1",
+                "https://www.recipetineats.com/wp-content/uploads/2018/03/Egg-Fried-Rice_5-1.jpg?w=500&h=375&crop=1",
+                "https://www.recipetineats.com/wp-content/uploads/2018/03/Egg-Fried-Rice_5-1.jpg?w=480&h=270&crop=1"
+            ],
+            "recipeYield": [
+                "2",
+                "2 - 3 people"
+            ],
+            "prepTime": "PT5M",
+            "cookTime": "PT10M",
+            "totalTime": "PT15M",
+            "recipeIngredient": [
+                "2 tbsp oil",
+                "2  garlic cloves (, minced)",
+                "1/2  onion (, finely chopped)",
+                "120 g/4 oz   bacon (, chopped (optional, or use ham))",
+                "1 - 1 1/2 cups diced vegetables (, frozen or fresh (Note 1))",
+                "2 cups (packed) cooked day old white rice  ((refrigerated or frozen defrosted (Note 2))",
+                "3  eggs, whisked",
+                "3/4 cup green onions (, (shallots / scallions) sliced)",
+                "1 tbsp Chinese cooking wine or Mirin ((or sake, dry sherry) (Note 4))",
+                "1 tbsp Oyster Sauce",
+                "1 tbsp dark soy sauce ((or light or all purpose) (Note 5))",
+                "1/2 tsp sesame oil (, optional)",
+                "1/4 tsp white pepper"
+            ],
+            "recipeInstructions": [
+                {
+                    "@type": "HowToStep",
+                    "text": "Heat about 1 1/2 tbsp oil in a wok or 2 tbsp oil in a skillet over high heat until smoking.",
+                    "name": "Heat about 1 1/2 tbsp oil in a wok or 2 tbsp oil in a skillet over high heat until smoking.",
+                    "url": "https://www.recipetineats.com/egg-fried-rice/#wprm-recipe-28005-step-0-0"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Add onion, garlic and bacon. Cook until bacon is light golden - about 1 1/2 minutes.",
+                    "name": "Add onion, garlic and bacon. Cook until bacon is light golden - about 1 1/2 minutes.",
+                    "url": "https://www.recipetineats.com/egg-fried-rice/#wprm-recipe-28005-step-0-1"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Add vegetables (still frozen is fine). Cook for 2 minutes so they defrost and water evaporates.",
+                    "name": "Add vegetables (still frozen is fine). Cook for 2 minutes so they defrost and water evaporates.",
+                    "url": "https://www.recipetineats.com/egg-fried-rice/#wprm-recipe-28005-step-0-2"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Add rice and Sauce ingredients. Cook for 1 1/2 minutes until liquid evaporates.",
+                    "name": "Add rice and Sauce ingredients. Cook for 1 1/2 minutes until liquid evaporates.",
+                    "url": "https://www.recipetineats.com/egg-fried-rice/#wprm-recipe-28005-step-0-3"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Shove rice to the side of the wok / skillet. Add 1/2 tbsp oil into the cleared space, shift wok so the heat is centred over the cleared space. Pour in egg then scramble - cook it through properly, don't \"soft scramble\".",
+                    "name": "Shove rice to the side of the wok / skillet. Add 1/2 tbsp oil into the cleared space, shift wok so the heat is centred over the cleared space. Pour in egg then scramble - cook it through properly, don't \"soft scramble\".",
+                    "url": "https://www.recipetineats.com/egg-fried-rice/#wprm-recipe-28005-step-0-4"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Add shallots then stir the egg into the rice. Remove from heat and serve immediately!",
+                    "name": "Add shallots then stir the egg into the rice. Remove from heat and serve immediately!",
+                    "url": "https://www.recipetineats.com/egg-fried-rice/#wprm-recipe-28005-step-0-5"
+                }
+            ],
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5",
+                "ratingCount": "139"
+            },
+            "recipeCategory": [
+                "Side"
+            ],
+            "recipeCuisine": [
+                "Asian",
+                "Chinese"
+            ],
+            "keywords": "Fried Rice",
+            "nutrition": {
+                "@type": "NutritionInformation",
+                "servingSize": "315 g",
+                "calories": "522 kcal"
+            },
+            "@id": "https://www.recipetineats.com/egg-fried-rice/#recipe",
+            "isPartOf": {
+                "@id": "https://www.recipetineats.com/egg-fried-rice/#article"
+            },
+            "mainEntityOfPage": "https://www.recipetineats.com/egg-fried-rice/#webpage"
+        }
+    ]
+}
