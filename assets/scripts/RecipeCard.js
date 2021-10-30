@@ -139,22 +139,22 @@ class RecipeCard extends HTMLElement {
       tempCommentNumber.textContent = '('+searchForKey(data, 'aggregateRating').ratingCount+')';
       let star = document.createElement('img');
       if(starNumber>4){
-        star.src='/assets/images/icons/5-star.svg';
+        star.src='assets/images/icons/5-star.svg';
         star.alt='5 stars';
       }else if(starNumber>3 && starNumber<=4){
-        star.src='/assets/images/icons/4-star.svg';
+        star.src='assets/images/icons/4-star.svg';
         star.alt='4 stars';
       }else if(starNumber>2 && starNumber<=3){
-        star.src='/assets/images/icons/3-star.svg';
+        star.src='assets/images/icons/3-star.svg';
         star.alt='3 stars';
       }else if(starNumber>1 && starNumber<=2){
-        star.src='/assets/images/icons/2-star.svg';
+        star.src='assets/images/icons/2-star.svg';
         star.alt='2 stars';
       }else if(starNumber>1 && starNumber<=2){
-        star.src='/assets/images/icons/1-star.svg';
+        star.src='assets/images/icons/1-star.svg';
         star.alt='1 stars';
       }else{
-        star.src='/assets/images/icons/0-star.svg';
+        star.src='assets/images/icons/0-star.svg';
         star.alt='0 stars';
       }
       tempRate.appendChild(tempStar);
