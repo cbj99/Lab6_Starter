@@ -1,8 +1,9 @@
 class RecipeCard extends HTMLElement {
   constructor() {
     // Part 1 Expose - TODO
-
+    super();
     // You'll want to attach the shadow DOM here
+    let shadow = this.attachShadow({mode: 'open'});
   }
 
   set data(data) {
@@ -100,9 +101,100 @@ class RecipeCard extends HTMLElement {
     // created in the constructor()
 
     // Part 1 Expose - TODO
+    let main = document.querySelector('main');
+    this.shadowRoot.appendChild(styleElem);
+    //card.appendChild(data);
+    console.log(data);
+
+    //add image
+    let tempImg = document.createElement('img')
+    tempImg.src = getImageUrl(data);
+    //console.log(getImageUrl(data));
+    tempImg.alt = searchForKey(data, 'headline');
+    card.appendChild(tempImg);
+    
+    //add title
+    let tempTitle = document.createElement('p');
+    tempTitle.className = 'title';
+    let tempReference = document.createElement('a');
+    tempReference.href = getUrl(data);
+    tempReference.textContent = searchForKey(data, 'headline');
+    tempTitle.appendChild(tempReference);
+    card.appendChild(tempTitle);
+
+    //add organization
+    let tempOrg = document.createElement('p');
+    tempOrg.className = 'organization';
+    tempOrg.textContent = getOrganization(data);
+    card.appendChild(tempOrg);
+
+    //add rating
+    let tempRate = document.createElement('div');
+    tempRate.className = 'rating';
+    if(searchForKey(data, 'aggregateRating')){
+      let tempStar = document.createElement('span');
+      let starNumber = searchForKey(data, 'aggregateRating').ratingValue;
+      tempStar.textContent = starNumber
+      let tempCommentNumber = document.createElement('span');
+      tempCommentNumber.textContent = '('+searchForKey(data, 'aggregateRating').ratingCount+')';
+      let star = document.createElement('img');
+      if(starNumber>4){
+        star.src='/assets/images/icons/5-star.svg';
+        star.alt='5 stars';
+      }else if(starNumber>3 && starNumber<=4){
+        star.src='/assets/images/icons/4-star.svg';
+        star.alt='4 stars';
+      }else if(starNumber>2 && starNumber<=3){
+        star.src='/assets/images/icons/3-star.svg';
+        star.alt='3 stars';
+      }else if(starNumber>1 && starNumber<=2){
+        star.src='/assets/images/icons/2-star.svg';
+        star.alt='2 stars';
+      }else if(starNumber>1 && starNumber<=2){
+        star.src='/assets/images/icons/1-star.svg';
+        star.alt='1 stars';
+      }else{
+        star.src='/assets/images/icons/0-star.svg';
+        star.alt='0 stars';
+      }
+      tempRate.appendChild(tempStar);
+      tempRate.appendChild(star);
+      tempRate.appendChild(tempCommentNumber);
+    }else{
+      let empty = document.createElement('span');
+      empty.textContent="No Reviews";
+      tempRate.appendChild(empty);
+    }
+    card.appendChild(tempRate);
+
+    //add time
+    let tempTime = document.createElement('time');
+    tempTime.textContent = convertTime(searchForKey(data,'totalTime'));
+    card.appendChild(tempTime);
+
+    //add ingredients
+    let tempIngredients = document.createElement('p');
+    tempIngredients.className = 'ingredients';
+    tempIngredients.textContent = createIngredientList(searchForKey(data,'recipeIngredient'));
+    card.appendChild(tempIngredients);
+
+
+    
+
+    this.shadowRoot.appendChild(card);
   }
 }
 
+
+function getImageUrl(data) {
+  if (data.image) return data.image.url;
+  if (data['@graph']) {
+    for (let i = 0; i < data['@graph'].length; i++) {
+      if (data['@graph'][i]['@type'] == 'ImageObject') return data['@graph'][i].url;
+    }
+  };
+  return null;
+}
 
 /*********************************************************************/
 /***                       Helper Functions:                       ***/
