@@ -14,7 +14,9 @@ const recipes = [
 // Once all of the recipes that were specified above have been fetched, their
 // data will be added to this object below. You may use whatever you like for the
 // keys as long as it's unique, one suggestion might but the URL itself
-const recipeData = {}
+let dataList = [];
+let dataList1 = [];
+const recipeData = {dataList,dataList1}
 
 window.addEventListener('DOMContentLoaded', init);
 
@@ -49,15 +51,33 @@ async function fetchRecipes() {
 
     let temp = [];
     //console.log(recipes.length);
-    for (let i = 0; i < recipes.length; i++) {
+    for (let i = 3; i < 6; i++) {
       fetch(recipes[i])
         .then(response => response.json())
         .then(data => {
           temp.push(data);
-          if (recipes.length == temp.length) {
+          if (3 == temp.length) {
             //console.log(temp);
-            recipeData.dataList = temp;
-            //console.log(recipeData);
+            recipeData.dataList1 = temp;
+            console.log(recipeData);
+          }
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+        });
+    }
+
+    let temp1 = [];
+    //console.log(recipes.length);
+    for (let i = 0; i < 3; i++) {
+      fetch(recipes[i])
+        .then(response => response.json())
+        .then(data => {
+          temp1.push(data);
+          if (3 == temp1.length) {
+            //console.log(temp);
+            recipeData.dataList = temp1;
+            console.log(recipeData);
             resolve(true);
           }
         })
@@ -84,10 +104,16 @@ function createRecipeCards() {
   for (let i = 0; i < recipeData.dataList.length; i++) {
     let newRecipe = document.createElement("recipe-card");
     newRecipe.data = recipeData.dataList[i];
-    if(i>=3){
-      newRecipe.className = "hidden";
-      newRecipe.style.display = 'none';
-    }
+    //console.log(newRecipe.data);
+    //console.log(recipeData.dataList[i]);
+    main.appendChild(newRecipe);
+  }
+
+  for (let i = 0; i < recipeData.dataList1.length; i++) {
+    let newRecipe = document.createElement("recipe-card");
+    newRecipe.data = recipeData.dataList1[i];
+    newRecipe.className = "hidden";
+    newRecipe.style.display = 'none';
     //console.log(newRecipe.data);
     //console.log(recipeData.dataList[i]);
     main.appendChild(newRecipe);
